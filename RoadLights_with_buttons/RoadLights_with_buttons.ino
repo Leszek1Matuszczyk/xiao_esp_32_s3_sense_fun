@@ -1,15 +1,15 @@
-#define RED 5       // Assign pin 5 to the red light
-#define YELLOW 6    // Assign pin 6 to the yellow light
-#define GREEN 7     // Assign pin 7 to the green light
-#define BUTTON1 8   // Assign pin 8 to button 1
-#define BUTTON2 9   // Assign pin 9 to button 2
+#define RED 1       // Assign pin 1 to the red light
+#define YELLOW 2    // Assign pin 2 to the yellow light
+#define GREEN 3     // Assign pin 3 to the green light
+#define BUTTON1 4   // Assign pin 4 to button 1
+#define BUTTON2 5   // Assign pin 5 to button 2
 
-int Time = 0;       // Variable to store delay time for light changes
+int Time = 100;     // Variable to store delay time for light changes
 
 void setup() {
-  pinMode(RED, OUTPUT);       // Configure red light pin as output
-  pinMode(YELLOW, OUTPUT);    // Configure yellow light pin as output
-  pinMode(GREEN, OUTPUT);     // Configure green light pin as output
+  pinMode(RED, OUTPUT);          // Configure red light pin as output
+  pinMode(YELLOW, OUTPUT);       // Configure yellow light pin as output
+  pinMode(GREEN, OUTPUT);        // Configure green light pin as output
   pinMode(BUTTON1, INPUT_PULLUP); // Configure button 1 with internal pull-up resistor
   pinMode(BUTTON2, INPUT_PULLUP); // Configure button 2 with internal pull-up resistor
 }
